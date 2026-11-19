@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>扉 — GLOBAL INNER DIVINE</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Noto+Serif+JP:wght@300&display=swap" rel="stylesheet">
+<style>
+  :root { --paper:#F2EEE7; --ink:#262524; --sub:#7A756D; --accent:#A07A72; }
+  * { box-sizing:border-box; }
+  html,body { margin:0; background:var(--paper); color:var(--ink); }
+  body { font-family:'Cormorant Garamond',Georgia,serif; min-height:100vh; display:grid; place-items:center; padding:48px 24px; }
+  main { width:100%; max-width:560px; display:grid; grid-template-columns:1fr auto; gap:40px; align-items:start; }
+  .kanji { font-family:'Noto Serif JP',serif; font-weight:300; font-size:clamp(64px,14vw,104px); writing-mode:vertical-rl; line-height:1; padding-left:28px; border-left:1px solid var(--accent); }
+  .small { font-size:13px; letter-spacing:.32em; text-transform:uppercase; color:var(--sub); margin:0 0 28px; }
+  h1 { font-weight:400; font-size:clamp(34px,6vw,46px); line-height:1.15; margin:0 0 22px; }
+  p { font-size:21px; line-height:1.6; margin:0 0 18px; }
+  .key { display:inline-block; margin:10px 0 26px; padding:14px 22px; border:1px solid var(--ink); font-size:26px; letter-spacing:.42em; padding-right:12px; cursor:pointer; user-select:all; }
+  .key small { display:block; font-size:12px; letter-spacing:.3em; color:var(--sub); margin-top:6px; }
+  a { color:var(--ink); }
+  .links a { display:block; margin:6px 0; font-style:italic; }
+  .hush { margin-top:34px; font-size:16px; color:var(--sub); font-style:italic; }
+  .reveal { opacity:0; transform:translateY(6px); animation:in 1.6s ease forwards; }
+  .d2 { animation-delay:.6s; } .d3 { animation-delay:1.4s; } .d4 { animation-delay:2.2s; }
+  @keyframes in { to { opacity:1; transform:none; } }
+  @media (prefers-reduced-motion: reduce) { .reveal { animation:none; opacity:1; transform:none; } }
+</style>
+</head>
+<body>
+<main>
+  <div>
+    <p class="small reveal">Tobira · the door</p>
+    <h1 class="reveal d2">You found the door.</h1>
+    <p class="reveal d2">Most people walk past it. You noticed — in Japanese, that small moment is <em>kizuki</em> (気づき).</p>
+    <p class="reveal d3">So here is a key.</p>
+    <div class="key reveal d3" title="Tap to select">KAGI<small>鍵 · 30% off anything in our shop</small></div>
+    <p class="reveal d4">Enter it at checkout. It doesn't expire.</p>
+    <div class="links reveal d4">
+      <a href="https://payhip.com/b/KPUem">Free phone wallpapers →</a>
+      <a href="https://payhip.com/b/0sROU">All 72 microseason wallpapers →</a>
+      <a href="https://payhip.com/b/bm8CI">The Circle Journal →</a>
+    </div>
+    <p class="hush reveal d4">If you'd like, pass the door on to one person who would notice it too.</p>
+  </div>
+  <div class="kanji reveal" aria-hidden="true">扉</div>
+</main>
+</body>
+</html>
